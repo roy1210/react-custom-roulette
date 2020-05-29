@@ -1,12 +1,13 @@
 {
   "name": "react-custom-roulette",
-  "version": "1.0.2",
+  "version": "1.0.9",
   "description": "customizable wheel of fortune with spinning animation",
   "main": "./dist/bundle.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/effectussoftware/wheel-of-fortune"
   },
+  "types": "./dist/index.d.ts",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -23,7 +24,7 @@
   "scripts": {
     "start-server": "react-scripts start",
     "start": "webpack --watch",
-    "build": "webpack",
+    "build": "tsc && cp -R ./src/assets ./dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
