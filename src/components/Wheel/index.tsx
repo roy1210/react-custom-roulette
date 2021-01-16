@@ -46,7 +46,8 @@ const STARTED_SPINNING = 'started-spinning';
 
 const START_SPINNING_TIME = 2600;
 const CONTINUE_SPINNING_TIME = 750;
-const STOP_SPINNING_TIME = 8000;
+// const STOP_SPINNING_TIME = 8000;
+const STOP_SPINNING_TIME = 80000;
 
 export const Wheel = ({
   mustStartSpinning,
